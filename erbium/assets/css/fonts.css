@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "CocoBiker"; 
+    src: url("../fonts/CocoBiker\ Regular-trial.ttf") format("truetype"); /* копирайт */
+    font-style: normal; 
+    font-weight: normal; 
+  } 
+  
+  @font-face {
+    font-family: "Duepuntozero";
+    src: url("../fonts/Duepuntozero\ Pro\ Light.otf"); /* копирайт */
+  }
+  
+  @font-face {
+    font-family: "Kanit Cyrillic";
+    src: url("../fonts/Kanit Cyrillic.otf");
+  }

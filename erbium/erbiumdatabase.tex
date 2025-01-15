@@ -1,0 +1,347 @@
+% phpMyAdmin LaTeX Dump
+% version 5.2.1
+% https://www.phpmyadmin.net/
+%
+% Хост: 127.0.0.1
+% Время создания: Янв 12 2025 г., 13:12
+% Версия сервера: 10.4.32-MariaDB
+% Версия PHP: 8.2.12
+% 
+% База данных: 'erbiumdatabase'
+% 
+
+%
+% Структура: favorites
+%
+ \begin{longtable}{|l|c|c|c|l|} 
+ \caption{Структура таблицы favorites} \label{tab:favorites-structure} \\
+ \hline \multicolumn{1}{|c|}{\textbf{Столбец}} & \multicolumn{1}{|c|}{\textbf{Тип}} & \multicolumn{1}{|c|}{\textbf{Null}} & \multicolumn{1}{|c|}{\textbf{По умолчанию}} & \multicolumn{1}{|c|}{\textbf{Комментарии}} \\ \hline \hline
+\endfirsthead
+ \caption{Структура таблицы favorites (продолжение)} \\ 
+ \hline \multicolumn{1}{|c|}{\textbf{Столбец}} & \multicolumn{1}{|c|}{\textbf{Тип}} & \multicolumn{1}{|c|}{\textbf{Null}} & \multicolumn{1}{|c|}{\textbf{По умолчанию}} & \multicolumn{1}{|c|}{\textbf{Комментарии}} \\ \hline \hline \endhead \endfoot 
+\textbf{\textit{id}} & bigint(20) & Нет &  \\ \hline 
+\textbf{userId} & bigint(20) & Нет &  \\ \hline 
+\textbf{studioId} & bigint(20) & Нет &  \\ \hline 
+ \end{longtable}
+
+%
+% Данные: favorites
+%
+ \begin{longtable}{|l|l|l|} 
+ \hline \endhead \hline \endfoot \hline 
+ \caption{Содержимое таблицы favorites} \label{tab:favorites-data} \\\hline \multicolumn{1}{|c|}{\textbf{id}} & \multicolumn{1}{|c|}{\textbf{userId}} & \multicolumn{1}{|c|}{\textbf{studioId}} \\ \hline \hline  \endfirsthead 
+\caption{Содержимое таблицы favorites (продолжение)} \\ \hline \multicolumn{1}{|c|}{\textbf{id}} & \multicolumn{1}{|c|}{\textbf{userId}} & \multicolumn{1}{|c|}{\textbf{studioId}} \\ \hline \hline \endhead \endfoot
+1 & 7 & 1 \\ \hline 
+ \end{longtable}
+
+%
+% Структура: messages
+%
+ \begin{longtable}{|l|c|c|c|l|} 
+ \caption{Структура таблицы messages} \label{tab:messages-structure} \\
+ \hline \multicolumn{1}{|c|}{\textbf{Столбец}} & \multicolumn{1}{|c|}{\textbf{Тип}} & \multicolumn{1}{|c|}{\textbf{Null}} & \multicolumn{1}{|c|}{\textbf{По умолчанию}} & \multicolumn{1}{|c|}{\textbf{Комментарии}} \\ \hline \hline
+\endfirsthead
+ \caption{Структура таблицы messages (продолжение)} \\ 
+ \hline \multicolumn{1}{|c|}{\textbf{Столбец}} & \multicolumn{1}{|c|}{\textbf{Тип}} & \multicolumn{1}{|c|}{\textbf{Null}} & \multicolumn{1}{|c|}{\textbf{По умолчанию}} & \multicolumn{1}{|c|}{\textbf{Комментарии}} \\ \hline \hline \endhead \endfoot 
+\textbf{\textit{id}} & bigint(20) & Нет &  \\ \hline 
+senderId & bigint(20) & Нет &  \\ \hline 
+receiverId & bigint(20) & Нет &  \\ \hline 
+message & text & Нет &  \\ \hline 
+createdAt & datetime & Нет & current\_timestamp() \\ \hline 
+ \end{longtable}
+
+%
+% Данные: messages
+%
+ \begin{longtable}{|l|l|l|l|l|} 
+ \hline \endhead \hline \endfoot \hline 
+ \caption{Содержимое таблицы messages} \label{tab:messages-data} \\\hline \multicolumn{1}{|c|}{\textbf{id}} & \multicolumn{1}{|c|}{\textbf{senderId}} & \multicolumn{1}{|c|}{\textbf{receiverId}} & \multicolumn{1}{|c|}{\textbf{message}} & \multicolumn{1}{|c|}{\textbf{createdAt}} \\ \hline \hline  \endfirsthead 
+\caption{Содержимое таблицы messages (продолжение)} \\ \hline \multicolumn{1}{|c|}{\textbf{id}} & \multicolumn{1}{|c|}{\textbf{senderId}} & \multicolumn{1}{|c|}{\textbf{receiverId}} & \multicolumn{1}{|c|}{\textbf{message}} & \multicolumn{1}{|c|}{\textbf{createdAt}} \\ \hline \hline \endhead \endfoot
+1 & 3 & 1 & 1 & 2024-12-13 21:07:10 \\ \hline 
+2 & 3 & 1 & 1 & 2024-12-13 21:08:29 \\ \hline 
+3 & 3 & 1 & 1 & 2024-12-13 21:10:37 \\ \hline 
+4 & 3 & 1 & 2 & 2024-12-13 21:15:01 \\ \hline 
+5 & 3 & 1 & 2 & 2024-12-13 21:17:14 \\ \hline 
+6 & 3 & 1 & 2 & 2024-12-13 21:17:55 \\ \hline 
+7 & 3 & 1 & 23 & 2024-12-13 21:20:35 \\ \hline 
+8 & 3 & 1 & Запрос от БигБосс & 2024-12-13 21:26:26 \\ \hline 
+9 & 7 & 1 & Ответ от левого чела & 2024-12-13 21:27:24 \\ \hline 
+10 & 7 & 1 & Айоу & 2024-12-13 21:33:21 \\ \hline 
+14 & 7 & 4 & Хелп & 2024-12-13 22:03:19 \\ \hline 
+15 & 7 & 4 & 1 & 2024-12-13 22:03:43 \\ \hline 
+16 & 7 & 4 & 1 & 2024-12-13 22:06:39 \\ \hline 
+ \end{longtable}
+
+%
+% Структура: reviews
+%
+ \begin{longtable}{|l|c|c|c|l|} 
+ \caption{Структура таблицы reviews} \label{tab:reviews-structure} \\
+ \hline \multicolumn{1}{|c|}{\textbf{Столбец}} & \multicolumn{1}{|c|}{\textbf{Тип}} & \multicolumn{1}{|c|}{\textbf{Null}} & \multicolumn{1}{|c|}{\textbf{По умолчанию}} & \multicolumn{1}{|c|}{\textbf{Комментарии}} \\ \hline \hline
+\endfirsthead
+ \caption{Структура таблицы reviews (продолжение)} \\ 
+ \hline \multicolumn{1}{|c|}{\textbf{Столбец}} & \multicolumn{1}{|c|}{\textbf{Тип}} & \multicolumn{1}{|c|}{\textbf{Null}} & \multicolumn{1}{|c|}{\textbf{По умолчанию}} & \multicolumn{1}{|c|}{\textbf{Комментарии}} \\ \hline \hline \endhead \endfoot 
+\textbf{\textit{id}} & int(11) & Нет &  \\ \hline 
+studio\_id & bigint(20) & Нет &  \\ \hline 
+user\_id & bigint(20) & Нет &  \\ \hline 
+rating & int(11) & Нет &  \\ \hline 
+comment & text & Да & NULL \\ \hline 
+created\_at & timestamp & Нет & current\_timestamp() \\ \hline 
+isActive & binary(1) & Нет & 1 \\ \hline 
+ \end{longtable}
+
+%
+% Данные: reviews
+%
+ \begin{longtable}{|l|l|l|l|l|l|l|} 
+ \hline \endhead \hline \endfoot \hline 
+ \caption{Содержимое таблицы reviews} \label{tab:reviews-data} \\\hline \multicolumn{1}{|c|}{\textbf{id}} & \multicolumn{1}{|c|}{\textbf{studio\_id}} & \multicolumn{1}{|c|}{\textbf{user\_id}} & \multicolumn{1}{|c|}{\textbf{rating}} & \multicolumn{1}{|c|}{\textbf{comment}} & \multicolumn{1}{|c|}{\textbf{created\_at}} & \multicolumn{1}{|c|}{\textbf{isActive}} \\ \hline \hline  \endfirsthead 
+\caption{Содержимое таблицы reviews (продолжение)} \\ \hline \multicolumn{1}{|c|}{\textbf{id}} & \multicolumn{1}{|c|}{\textbf{studio\_id}} & \multicolumn{1}{|c|}{\textbf{user\_id}} & \multicolumn{1}{|c|}{\textbf{rating}} & \multicolumn{1}{|c|}{\textbf{comment}} & \multicolumn{1}{|c|}{\textbf{created\_at}} & \multicolumn{1}{|c|}{\textbf{isActive}} \\ \hline \hline \endhead \endfoot
+2 & 1 & 7 & 1 & U ful >:( & 2024-12-25 23:55:33 & 1 \\ \hline 
+3 & 1 & 7 & 2 & gfus & 2024-12-25 23:55:53 & 1 \\ \hline 
+4 & 17 & 7 & 1 & че за сонце ты че де бил ? & 2024-12-25 23:56:35 & 1 \\ \hline 
+5 & 14 & 4 & 5 & Who designed this site? Feels like i felt into the sewer. & 2024-12-28 21:32:14 & 0 \\ \hline 
+6 & 14 & 4 & 5 & Who designed this site? Feels like i felt into the sewer. & 2024-12-28 21:39:30 & 0 \\ \hline 
+7 & 14 & 4 & 5 & Who designed this site? Feels like i felt into the sewer. & 2024-12-28 21:44:58 & 0 \\ \hline 
+8 & 14 & 4 & 2 & NWM & 2024-12-28 22:06:44 & 1 \\ \hline 
+9 & 14 & 4 & 3 & YF & 2024-12-28 22:13:35 & 1 \\ \hline 
+10 & 1 & 15 & 4 & test & 2025-01-11 18:49:24 & 1 \\ \hline 
+11 & 9 & 15 & 3 & Отзыв & 2025-01-12 17:31:25 & 0 \\ \hline 
+12 & 9 & 15 & 3 & Отзыв & 2025-01-12 17:31:50 & 1 \\ \hline 
+ \end{longtable}
+
+%
+% Структура: sessions
+%
+ \begin{longtable}{|l|c|c|c|l|} 
+ \caption{Структура таблицы sessions} \label{tab:sessions-structure} \\
+ \hline \multicolumn{1}{|c|}{\textbf{Столбец}} & \multicolumn{1}{|c|}{\textbf{Тип}} & \multicolumn{1}{|c|}{\textbf{Null}} & \multicolumn{1}{|c|}{\textbf{По умолчанию}} & \multicolumn{1}{|c|}{\textbf{Комментарии}} \\ \hline \hline
+\endfirsthead
+ \caption{Структура таблицы sessions (продолжение)} \\ 
+ \hline \multicolumn{1}{|c|}{\textbf{Столбец}} & \multicolumn{1}{|c|}{\textbf{Тип}} & \multicolumn{1}{|c|}{\textbf{Null}} & \multicolumn{1}{|c|}{\textbf{По умолчанию}} & \multicolumn{1}{|c|}{\textbf{Комментарии}} \\ \hline \hline \endhead \endfoot 
+\textbf{\textit{id}} & bigint(20) & Нет &  \\ \hline 
+userId & bigint(20) & Нет &  \\ \hline 
+\textbf{token} & varchar(255) & Нет &  \\ \hline 
+expiresAt & datetime & Нет &  \\ \hline 
+ \end{longtable}
+
+%
+% Данные: sessions
+%
+ \begin{longtable}{|l|l|l|l|} 
+ \hline \endhead \hline \endfoot \hline 
+ \caption{Содержимое таблицы sessions} \label{tab:sessions-data} \\\hline \multicolumn{1}{|c|}{\textbf{id}} & \multicolumn{1}{|c|}{\textbf{userId}} & \multicolumn{1}{|c|}{\textbf{token}} & \multicolumn{1}{|c|}{\textbf{expiresAt}} \\ \hline \hline  \endfirsthead 
+\caption{Содержимое таблицы sessions (продолжение)} \\ \hline \multicolumn{1}{|c|}{\textbf{id}} & \multicolumn{1}{|c|}{\textbf{userId}} & \multicolumn{1}{|c|}{\textbf{token}} & \multicolumn{1}{|c|}{\textbf{expiresAt}} \\ \hline \hline \endhead \endfoot
+19 & 4 & 41be839fa686f346ad95dc86a880264c & 2024-11-24 00:57:33 \\ \hline 
+20 & 5 & a2e11068887f714aa8e337eb1eaf91f1 & 2024-11-23 13:00:39 \\ \hline 
+21 & 3 & 0c50d4ebeb22293b4c36730bdb330c4f & 2024-11-23 13:01:54 \\ \hline 
+22 & 1 & dc0dd734b3ac4aae39d1f435da9f74ee & 2024-11-23 13:35:43 \\ \hline 
+23 & 3 & 9c15c02de0dee5b763715ca5c82f0aa2 & 2024-11-30 13:26:18 \\ \hline 
+24 & 6 & 3d664f63fae076eaf0cdc9f79f430e6f & 2024-11-30 14:00:53 \\ \hline 
+25 & 3 & d4a91beafa0fdd731ca9fb6fcf5f778e & 2024-12-06 23:56:48 \\ \hline 
+26 & 7 & 06ecea5a6265b6c87b3e6e40398ceb97 & 2024-12-07 00:06:58 \\ \hline 
+27 & 4 & 650e93fccc8bcc72fb419a3dc723cc8d & 2024-12-07 12:55:13 \\ \hline 
+28 & 4 & e0570a1a4b5ed637439ed1054d3f3ad4 & 2024-12-07 13:01:41 \\ \hline 
+29 & 3 & 7f89e4a1e716ff2b69ee4ab72e191412 & 2024-12-14 00:23:22 \\ \hline 
+30 & 7 & 0d4379c453e275a390ae3711bc01207c & 2024-12-14 01:27:07 \\ \hline 
+31 & 4 & d0fe39f083a3cb3e1dc10b9b05cde523 & 2024-12-14 02:35:05 \\ \hline 
+32 & 7 & 1a0e7d2aedd90f09d2e6258c8a22f51f & 2024-12-14 02:36:13 \\ \hline 
+33 & 4 & a4580dc6642094b86dbbf78af72c2f97 & 2024-12-14 02:36:57 \\ \hline 
+34 & 7 & 38f029383ea5c0269885ec94c6a08dfb & 2024-12-14 02:37:03 \\ \hline 
+36 & 4 & 81b933b6123108e61336138da86362b9 & 2024-12-23 20:38:35 \\ \hline 
+37 & 4 & 5f1d3972b422173c80a36b0d2f49249e9499a2c5e249421f7496d2c08124d25f & 2024-12-24 09:34:33 \\ \hline 
+38 & 4 & a78fd27e49581ec2dde15204efe2df02abc45b4787a8725e296d8355aea2e15b & 2024-12-24 09:34:40 \\ \hline 
+39 & 4 & e50e14410c76ddc73f05394735f0f99556a70f0fec0ca3091b2bb35df099888c & 2024-12-24 09:40:59 \\ \hline 
+40 & 4 & 14eabb263a5bacea1de37cc94be964c33d693ed70f89b037809ec29747848909 & 2024-12-24 09:42:07 \\ \hline 
+41 & 4 & ed61acd20f0aa42b23bcbb55b6745ff833886f7f03170667966c39a4d761c64f & 2024-12-24 09:42:11 \\ \hline 
+42 & 4 & 4da61ce01fa3069ed1a9c1f164804ec913234f7ed67d2210fb0f3cf7479d3bcd & 2024-12-24 09:43:18 \\ \hline 
+43 & 4 & 2eb5bba21cfb05f906eb477387a9fc6c93d21bb3d48f55cd96bb0ef1dfd8c77c & 2024-12-24 09:43:51 \\ \hline 
+45 & 4 & 61911b03b8675ecd090c87b1a36547fbffc2704bd8b93c1c1f1ab51c285745c5 & 2024-12-24 16:39:36 \\ \hline 
+46 & 4 & 2b3ed4fcf4af716b35f9cd656c88fd705ac1493c5f62fc2e4e8a50847647d1aa & 2025-01-22 17:15:51 \\ \hline 
+47 & 4 & 04f8c7a80a02081689d92caf2b6a81ef978a36f214eabbd890c2d969684a9804 & 2025-01-22 17:16:14 \\ \hline 
+48 & 4 & ac45f580aa063209727e2d52c1a46bbf23ce379b6c7af722bdeb62bdcd31793c & 2025-01-22 17:16:24 \\ \hline 
+49 & 4 & bb4ef0284d355fd4304c228d9f6d2a5803e4a4308e7e94638dede97e20e544e1 & 2025-01-22 17:16:58 \\ \hline 
+50 & 4 & 87900d32e71b3ba17f1c1af6e5ee729268592f3a4b76cd2fa9ca718af06265af & 2025-01-22 17:21:05 \\ \hline 
+51 & 4 & ad675b47554a41196ac43da35805ad46f330c2d45a193c0f444c081a552c3aed & 2025-01-22 17:22:22 \\ \hline 
+52 & 11 & 3eb2726b92a9d5a46cb300d9900821d6429a20776c10d6abe37aef02de5e1f9a & 2025-01-22 17:34:38 \\ \hline 
+53 & 12 & 20ababc1dc947cdab1a67feb56260aca36169dc0a5d87606474124f151cf4e3c & 2025-01-22 17:35:02 \\ \hline 
+54 & 11 & 10df6c1fed054514403ae32d4324e5142b5c4917b8351610d4b05d6acbb6f093 & 2025-01-22 17:40:26 \\ \hline 
+55 & 11 & 7a739dd2e7cefa6f5fc714d96e8923beb8117ff48735506b83d946d6032d395a & 2025-01-22 17:40:55 \\ \hline 
+56 & 11 & 605b2e2eb78ceaad21d286fba2d8d12c5869d74a0b4457db9cb10d82f3124417 & 2025-01-22 17:41:20 \\ \hline 
+57 & 11 & 32c7a8f11b4175f69686033eb43e6e61e59628147cf6fa75582d34baf1a9ab46 & 2025-01-22 18:35:33 \\ \hline 
+58 & 11 & 04e6d79d37f62105fbb626e794a79f9f49353f4d7ac1179f3d39fe48868c3ad5 & 2025-01-22 18:35:38 \\ \hline 
+59 & 11 & d3518ce17b9201864c85ca8923c028ccd4aeb7d4d838af711cad9ac670939507 & 2025-01-23 03:02:29 \\ \hline 
+61 & 4 & 8f4642c22c3bb2c7e6406d1a836525e7375beb630f3aba4a72855d86ed9368e1 & 2024-12-24 21:22:02 \\ \hline 
+62 & 4 & b33a4e49ac4ff35a2acbb534d84d4729324160d9bc7396c7cc10affd5a186270 & 2024-12-24 21:22:11 \\ \hline 
+63 & 13 & 11898cf8709a0d4b83cd0177aaf18fd67f3c60f025acde76411c9128a69d7e6a & 2024-12-24 21:43:11 \\ \hline 
+64 & 11 & 08d9ddd3f2eb81d5a48ab92cc9d8b80f6518baa93c1dc573d3b5b3e760922d78 & 2024-12-24 21:43:29 \\ \hline 
+65 & 11 & a13b0900a7cfc2548b74b43c24558daf84897230cbf255433edad3bc4f612cba & 2024-12-24 21:43:55 \\ \hline 
+66 & 11 & c5c0ae58c8241fc24b3393452ed19872f7d9fcb50a17edc4293d23766f2cf146 & 2024-12-24 21:47:48 \\ \hline 
+67 & 11 & 2af2d7838bc60fde7b56ddba785838b65b1aeb913c26050b14c1df3b170a5d9b & 2024-12-24 21:47:54 \\ \hline 
+68 & 11 & 752eb2faea278ac9c4716d7b77311b3fe82b1fb8ea8e50d2c83652e2c100f64b & 2024-12-24 21:49:04 \\ \hline 
+69 & 11 & 6dce0537d1b0f97939dcf6935d6f059bbb9acb20b80e23d0ee799a4d13466401 & 2024-12-24 22:04:56 \\ \hline 
+70 & 11 & 733291ae5bebc5b2862ae5fa7e23d2afe674339b55b3a72b77af99bae2e777b4 & 2024-12-24 22:06:23 \\ \hline 
+71 & 8 & 14f0e87d59cd046f97be22a83e2f2efe17a471091afe0e67b8069a18e42114af & 2024-12-25 14:06:39 \\ \hline 
+72 & 8 & c1ab37213850a28d117e3332ef9636485dc947df1058592bc9c7dea7fa655545 & 2024-12-25 14:47:37 \\ \hline 
+73 & 8 & d48a3ffa2b6667fc20f9da095083ce9c19ddb8a4fe1170f7ac68a957f06a03c4 & 2024-12-25 14:49:00 \\ \hline 
+74 & 8 & 9c2a0fbf27dc397089f1d2ae8e2f50ff08d47e35d07f898467851b5da24a8daa & 2024-12-25 14:50:13 \\ \hline 
+75 & 8 & 804862ce039aff7a28cf2873f682b3892f5654ddd3f1e6bcfb6802693f3671f0 & 2024-12-25 14:52:17 \\ \hline 
+76 & 5 & 897de20419a682b3f97a7dcf2ab2188b405de94e9a2d20cc5bdfd5549f4e940d & 2024-12-25 14:56:19 \\ \hline 
+77 & 11 & 1345979a5c07b2dd6d77e1580f3e50cfdbeec645da2feb86a575e610a3dbb244 & 2024-12-25 14:56:50 \\ \hline 
+78 & 11 & 29d803b7dc37c8d256e20fcd4b11bf03457835f6b7d8fbcaed85bbd282afa04d & 2024-12-25 15:02:26 \\ \hline 
+79 & 11 & 79b0f75620c9bb281a7cfd6a5d5c123c7b935235ab2e86e52c765969073e1dcb & 2024-12-25 15:02:40 \\ \hline 
+80 & 4 & 7d2d0df5a75d2eb643486d42e79c1042bf216769be58b6b0ab11a70959fe9f17 & 2024-12-25 15:02:47 \\ \hline 
+91 & 11 & ea2debfccf63219e70e9b6c61af87fad236e7ff4cc1c5336926d67393abc0e5b & 2024-12-25 15:15:12 \\ \hline 
+92 & 11 & c87297c0e0c053ddd799dfb09167cc2e8747eea4c52a3aa936b8c4832987e45b & 2024-12-25 15:34:20 \\ \hline 
+93 & 11 & aa4e0a854583f37456f8b4e10bdc6329d76b444034d2fd3280c094c8a969bc56 & 2024-12-25 15:34:57 \\ \hline 
+94 & 11 & e551ec18760eb279c27b3c976b2afecff61bee80b7a1ebb00ecbea17a46a06e2 & 2024-12-25 15:36:29 \\ \hline 
+96 & 11 & d5284350368da6a4c2af989273dada4003324297af2169d6707d6bf0a764bd71 & 2024-12-25 15:37:07 \\ \hline 
+97 & 11 & dfd9ce26b838c32068309defa30a122b0b99a391b92e113d3bed76507a575540 & 2024-12-24 23:47:30 \\ \hline 
+98 & 11 & d24ca133698d174d35b5fc4cf039496278e6dc299e4684c0e997961ff7d54434 & 2024-12-24 23:50:25 \\ \hline 
+99 & 11 & 060d325a13bbebab48df08e9782356007a4d59f8aed2602034f3138596dc36fb & 2024-12-25 00:03:35 \\ \hline 
+100 & 11 & aa71abfd8cb56f86b8d072c16f10188370e820bb571639dd838722904cae8039 & 2024-12-25 00:05:03 \\ \hline 
+101 & 11 & aada3297c07876b728a78a6fde27d85aa672680927285442cefc414b3beee944 & 2024-12-25 00:05:52 \\ \hline 
+102 & 11 & 2c8b7239256151a98f889ad4c4cd214671a24450c6f673e91795dc6ca8d928e5 & 2024-12-25 00:08:48 \\ \hline 
+103 & 11 & 36b09a59d076683069205104f4a83eec8d6654350b2dc61751590849d38ee4d1 & 2024-12-25 00:10:12 \\ \hline 
+104 & 11 & 19cc91c0cd08fca5b4b2cf9d0bcdb7bae02d733a3b71257d78bd3d0400e1e649 & 2024-12-25 00:11:52 \\ \hline 
+108 & 8 & 274e4adfcf1ce3eb01c37878d2594c209847f187d0fce5d1cbbf5be4f2dc1c18 & 2024-12-25 00:57:25 \\ \hline 
+109 & 8 & 77d9aa867193f89f25b8dcd5927e0ac9dcae4a34479b92c029a9f64d26c7f4ed & 2024-12-25 00:57:36 \\ \hline 
+110 & 3 & 8a86de96fd418e5853dc71cf1c384dea443015fcd41fb37012d2b7ae6e3088be & 2024-12-25 17:02:46 \\ \hline 
+111 & 7 & e542eb1bffb330ecf6813b359a23b7c86eda947cff17c64ac370ae6ffd86fd21 & 2024-12-25 23:57:00 \\ \hline 
+112 & 7 & 00b7bb3a51454b516f82ecfb97e82b4c929998b044c766da47bc6242c563ab02 & 2024-12-26 00:28:37 \\ \hline 
+113 & 7 & 3bec439cb7afdaace1a6d01cdf91dc011bd919b4f25fc30531621e2816de75e6 & 2024-12-26 16:28:50 \\ \hline 
+114 & 4 & 15ad5e67f89dc84b1484abe63c01e6d767a6b6345e54c37006243540387b6775 & 2024-12-27 06:10:41 \\ \hline 
+115 & 4 & addcffe06b16186b9da98a6000ddff134d0479c0d502eb44c118d32cb5ca55dc & 2024-12-28 21:18:47 \\ \hline 
+116 & 4 & 16050374c79e743e36f0700ef18d30c99c1c59115d325a9f83fb77d86e4c0b65 & 2024-12-28 22:14:15 \\ \hline 
+117 & 1 & bb240f963f8b5c9b0ff60f10014273dfcef036c8415db329df1d55f62597838f & 2024-12-29 14:25:38 \\ \hline 
+118 & 15 & 80efbf4e7754df0fc14a2d7ff4c3a38736dfa85e14f4257797da3eccfc298f66 & 2025-01-01 18:16:39 \\ \hline 
+119 & 7 & bb71e139d94adb0dc8d8ce98d5a89e05826910e6d433a53a8798f8a13a6fc2a6 & 2025-01-01 18:28:51 \\ \hline 
+120 & 15 & 07edef6c9eead80a1f12fbe68635dd1343cf2a1a0ba24e43f7c9f8c59fa39966 & 2025-01-01 18:56:34 \\ \hline 
+121 & 3 & f74a98d7f1edcf942ce2bb727547049e88bad4c3e2a268837d6c3c5008690af7 & 2025-01-02 10:56:39 \\ \hline 
+122 & 15 & 5b0395270530f286ce5f37f059c8d71d9aabc490e2357dfb7701f6e5cff931e1 & 2025-01-02 19:09:22 \\ \hline 
+123 & 3 & 410964b087b2b71ee9d22cccb0a916d81a8b5842446119f2e4da03a9a55a7e53 & 2025-01-02 19:10:17 \\ \hline 
+124 & 4 & c247555587dc2abdf83bce6a7ab6648eb69204bdba63d1f71c0b464a48c39f25 & 2025-01-03 13:40:01 \\ \hline 
+125 & 4 & bbd3a68ed6a71857867a767dbabe0849499ac384a233ba218d70e6c599b92651 & 2025-01-08 20:39:15 \\ \hline 
+126 & 15 & bc6a38385bd17a2bb0d9c3e7ebd2f3bd1aa192e022398241175ff2838b51d5ba & 2025-01-08 20:53:59 \\ \hline 
+127 & 3 & 3d07c2162a2f916285400da629e7dbb628e7eab4f289b15dec35f4ffa80d20f2 & 2025-01-08 21:14:23 \\ \hline 
+128 & 7 & 758e682e5fd40a925dde179b6f2517c6203509ab8949681aad879a7c0c80c60a & 2025-01-09 13:14:41 \\ \hline 
+129 & 15 & fd50cc10501b8e3d323c0adfa9d3dd8fe4e73528b8f04dc18d451540e81c5f6f & 2025-01-11 19:50:17 \\ \hline 
+130 & 3 & b2613507d34fca0b2988a529ce31c3b16ff91ca4e2410f1168613ebf7f2935a5 & 2025-01-11 19:50:39 \\ \hline 
+131 & 4 & 90164c76c545408ffe1b72f76826a63c2ba9d8f3f9efc51a813f7634f64b5885 & 2025-01-11 19:51:34 \\ \hline 
+132 & 15 & 28f9f6b6ca1809fbc657aa8db213ce033336c676a3e5c95f94368489b3576b35 & 2025-01-12 11:51:40 \\ \hline 
+133 & 15 & b25200fbcde5a99a04c6087d2dae4ebb34fa4f36285c80e1beac86fc614d8fcb & 2025-01-12 17:19:30 \\ \hline 
+134 & 15 & 2d4e7d0de4135917459444442b825dcdab078122e862bc07bf6a6f202df4c3d2 & 2025-01-12 17:19:38 \\ \hline 
+135 & 15 & 46182ea1bb5babebc17319fc6f5cba69c94500cc88df6a3772f57ed4ebcbce33 & 2025-01-12 17:20:45 \\ \hline 
+136 & 15 & 6c1227e04241d239a34bdbab6ae3233fb9a82a6f51c9eec9f22dd8c55732f676 & 2025-01-12 19:39:50 \\ \hline 
+ \end{longtable}
+
+%
+% Структура: studioprojects
+%
+ \begin{longtable}{|l|c|c|c|l|} 
+ \caption{Структура таблицы studioprojects} \label{tab:studioprojects-structure} \\
+ \hline \multicolumn{1}{|c|}{\textbf{Столбец}} & \multicolumn{1}{|c|}{\textbf{Тип}} & \multicolumn{1}{|c|}{\textbf{Null}} & \multicolumn{1}{|c|}{\textbf{По умолчанию}} & \multicolumn{1}{|c|}{\textbf{Комментарии}} \\ \hline \hline
+\endfirsthead
+ \caption{Структура таблицы studioprojects (продолжение)} \\ 
+ \hline \multicolumn{1}{|c|}{\textbf{Столбец}} & \multicolumn{1}{|c|}{\textbf{Тип}} & \multicolumn{1}{|c|}{\textbf{Null}} & \multicolumn{1}{|c|}{\textbf{По умолчанию}} & \multicolumn{1}{|c|}{\textbf{Комментарии}} \\ \hline \hline \endhead \endfoot 
+\textbf{\textit{id}} & bigint(20) & Нет &  \\ \hline 
+studioId & bigint(20) & Нет &  \\ \hline 
+\textbf{name} & text & Нет &  \\ \hline 
+description & text & Нет &  \\ \hline 
+createdAt & datetime & Нет & current\_timestamp() \\ \hline 
+ \end{longtable}
+
+%
+% Данные: studioprojects
+%
+ \begin{longtable}{|l|l|l|l|l|} 
+ \hline \endhead \hline \endfoot \hline 
+ \caption{Содержимое таблицы studioprojects} \label{tab:studioprojects-data} \\\hline \multicolumn{1}{|c|}{\textbf{id}} & \multicolumn{1}{|c|}{\textbf{studioId}} & \multicolumn{1}{|c|}{\textbf{name}} & \multicolumn{1}{|c|}{\textbf{description}} & \multicolumn{1}{|c|}{\textbf{createdAt}} \\ \hline \hline  \endfirsthead 
+\caption{Содержимое таблицы studioprojects (продолжение)} \\ \hline \multicolumn{1}{|c|}{\textbf{id}} & \multicolumn{1}{|c|}{\textbf{studioId}} & \multicolumn{1}{|c|}{\textbf{name}} & \multicolumn{1}{|c|}{\textbf{description}} & \multicolumn{1}{|c|}{\textbf{createdAt}} \\ \hline \hline \endhead \endfoot
+ \end{longtable}
+
+%
+% Структура: studios
+%
+ \begin{longtable}{|l|c|c|c|l|} 
+ \caption{Структура таблицы studios} \label{tab:studios-structure} \\
+ \hline \multicolumn{1}{|c|}{\textbf{Столбец}} & \multicolumn{1}{|c|}{\textbf{Тип}} & \multicolumn{1}{|c|}{\textbf{Null}} & \multicolumn{1}{|c|}{\textbf{По умолчанию}} & \multicolumn{1}{|c|}{\textbf{Комментарии}} \\ \hline \hline
+\endfirsthead
+ \caption{Структура таблицы studios (продолжение)} \\ 
+ \hline \multicolumn{1}{|c|}{\textbf{Столбец}} & \multicolumn{1}{|c|}{\textbf{Тип}} & \multicolumn{1}{|c|}{\textbf{Null}} & \multicolumn{1}{|c|}{\textbf{По умолчанию}} & \multicolumn{1}{|c|}{\textbf{Комментарии}} \\ \hline \hline \endhead \endfoot 
+\textbf{\textit{id}} & bigint(20) & Нет &  \\ \hline 
+\textbf{name} & text & Нет &  \\ \hline 
+type & text & Нет &  \\ \hline 
+contacts & text & Нет &  \\ \hline 
+description & text & Нет &  \\ \hline 
+ownerId & bigint(20) & Нет &  \\ \hline 
+createdAt & datetime & Нет & current\_timestamp() \\ \hline 
+image\_path & varchar(255) & Да & NULL \\ \hline 
+average\_rating & decimal(3,2) & Да & NULL \\ \hline 
+isActive & binary(1) & Да & 1 \\ \hline 
+ \end{longtable}
+
+%
+% Данные: studios
+%
+ \begin{longtable}{|l|l|l|l|l|l|l|l|l|l|} 
+ \hline \endhead \hline \endfoot \hline 
+ \caption{Содержимое таблицы studios} \label{tab:studios-data} \\\hline \multicolumn{1}{|c|}{\textbf{id}} & \multicolumn{1}{|c|}{\textbf{name}} & \multicolumn{1}{|c|}{\textbf{type}} & \multicolumn{1}{|c|}{\textbf{contacts}} & \multicolumn{1}{|c|}{\textbf{description}} & \multicolumn{1}{|c|}{\textbf{ownerId}} & \multicolumn{1}{|c|}{\textbf{createdAt}} & \multicolumn{1}{|c|}{\textbf{image\_path}} & \multicolumn{1}{|c|}{\textbf{average\_rating}} & \multicolumn{1}{|c|}{\textbf{isActive}} \\ \hline \hline  \endfirsthead 
+\caption{Содержимое таблицы studios (продолжение)} \\ \hline \multicolumn{1}{|c|}{\textbf{id}} & \multicolumn{1}{|c|}{\textbf{name}} & \multicolumn{1}{|c|}{\textbf{type}} & \multicolumn{1}{|c|}{\textbf{contacts}} & \multicolumn{1}{|c|}{\textbf{description}} & \multicolumn{1}{|c|}{\textbf{ownerId}} & \multicolumn{1}{|c|}{\textbf{createdAt}} & \multicolumn{1}{|c|}{\textbf{image\_path}} & \multicolumn{1}{|c|}{\textbf{average\_rating}} & \multicolumn{1}{|c|}{\textbf{isActive}} \\ \hline \hline \endhead \endfoot
+1 & ewq & test & 1 & a & 3 & 2024-11-22 23:48:50 & uploads/studios/загружено.jpg & 2.33 & 1 \\ \hline 
+2 & 2 & 2 & 2 & 2 & 3 & 2024-11-22 23:50:06 &  & \textit{NULL} & 1 \\ \hline 
+3 & bebraHouse & indie & 123123 & GFUS & 3 & 2024-11-22 23:56:00 & uploads/studios/photo\_2024-11-06\_20-33-25.jpg & \textit{NULL} & 1 \\ \hline 
+4 & s & indie & s & s & 3 & 2024-11-22 23:57:06 & uploads/studios/загружено.jpg & \textit{NULL} & 1 \\ \hline 
+5 & JenyaAfanas'ev & startup & Хз & Ыаыаыа & 3 & 2024-11-23 00:25:26 & uploads/studios/photo\_2024-10-05\_15-04-09.jpg & \textit{NULL} & 0 \\ \hline 
+9 & 321 & AAA & 4 & 4 & 4 & 2024-11-23 00:41:01 & uploads/studios/photo\_6740a60d8fbd87.58487754.png & 3.00 & 1 \\ \hline 
+10 & huh & AAA & 53 & 52 & 4 & 2024-11-23 00:43:38 & uploads/studios/photo\_6740a6aa7e78e3.49325965.jpg & \textit{NULL} & 1 \\ \hline 
+11 & Вфтнф & AAA & 123 & 321 & 4 & 2024-11-23 08:57:52 & uploads/studios/photo\_67411a80cf4fb6.22366436.png & \textit{NULL} & 1 \\ \hline 
+12 & TS & tt & tc & ы & 3 & 2024-12-25 01:07:31 & uploads/studios/Схема оптимизации.png & \textit{NULL} & 1 \\ \hline 
+13 & TestS & IDK & netu & Зачем? & 7 & 2024-12-25 23:07:29 & uploads/studios/05e912fc-a066-45b6-99fb-693683f30518.webp & \textit{NULL} & 1 \\ \hline 
+14 & swwwwwww & s & s & s & 7 & 2024-12-25 23:24:27 & uploads/studios/изображение\_2024-12-25\_232251691.png & 3.80 & 1 \\ \hline 
+17 & 47 & 47 & 42 & 52 & 7 & 2024-12-25 23:28:35 & uploads/studios/изображение\_2024-12-25\_232833668.png & 1.00 & 1 \\ \hline 
+19 & E & A & Y & WTF & 4 & 2024-12-28 22:14:09 & uploads/studios/676ff9a13bae5\_photo\_2024-12-14\_11-25-48 (2).jpg & \textit{NULL} & 1 \\ \hline 
+20 & 21321344324324324324 & 43243242 & 4324324324 & 43243243242 & 15 & 2025-01-01 18:36:40 & uploads/studios/67750ca8508ab\_photo\_2024-09-19\_11-29-05.jpg & \textit{NULL} & 0 \\ \hline 
+ \end{longtable}
+
+%
+% Структура: users
+%
+ \begin{longtable}{|l|c|c|c|l|} 
+ \caption{Структура таблицы users} \label{tab:users-structure} \\
+ \hline \multicolumn{1}{|c|}{\textbf{Столбец}} & \multicolumn{1}{|c|}{\textbf{Тип}} & \multicolumn{1}{|c|}{\textbf{Null}} & \multicolumn{1}{|c|}{\textbf{По умолчанию}} & \multicolumn{1}{|c|}{\textbf{Комментарии}} \\ \hline \hline
+\endfirsthead
+ \caption{Структура таблицы users (продолжение)} \\ 
+ \hline \multicolumn{1}{|c|}{\textbf{Столбец}} & \multicolumn{1}{|c|}{\textbf{Тип}} & \multicolumn{1}{|c|}{\textbf{Null}} & \multicolumn{1}{|c|}{\textbf{По умолчанию}} & \multicolumn{1}{|c|}{\textbf{Комментарии}} \\ \hline \hline \endhead \endfoot 
+\textbf{\textit{id}} & bigint(20) & Нет &  \\ \hline 
+\textbf{username} & text & Нет &  \\ \hline 
+\textbf{email} & text & Нет &  \\ \hline 
+\textbf{password} & varbinary(255) & Нет &  \\ \hline 
+createdAt & datetime & Нет & current\_timestamp() \\ \hline 
+isActive & binary(1) & Да & 1 \\ \hline 
+isAdmin & binary(1) & Да & NULL \\ \hline 
+avatar & text & Да & NULL \\ \hline 
+ \end{longtable}
+
+%
+% Данные: users
+%
+ \begin{longtable}{|l|l|l|l|l|l|l|l|} 
+ \hline \endhead \hline \endfoot \hline 
+ \caption{Содержимое таблицы users} \label{tab:users-data} \\\hline \multicolumn{1}{|c|}{\textbf{id}} & \multicolumn{1}{|c|}{\textbf{username}} & \multicolumn{1}{|c|}{\textbf{email}} & \multicolumn{1}{|c|}{\textbf{password}} & \multicolumn{1}{|c|}{\textbf{createdAt}} & \multicolumn{1}{|c|}{\textbf{isActive}} & \multicolumn{1}{|c|}{\textbf{isAdmin}} & \multicolumn{1}{|c|}{\textbf{avatar}} \\ \hline \hline  \endfirsthead 
+\caption{Содержимое таблицы users (продолжение)} \\ \hline \multicolumn{1}{|c|}{\textbf{id}} & \multicolumn{1}{|c|}{\textbf{username}} & \multicolumn{1}{|c|}{\textbf{email}} & \multicolumn{1}{|c|}{\textbf{password}} & \multicolumn{1}{|c|}{\textbf{createdAt}} & \multicolumn{1}{|c|}{\textbf{isActive}} & \multicolumn{1}{|c|}{\textbf{isAdmin}} & \multicolumn{1}{|c|}{\textbf{avatar}} \\ \hline \hline \endhead \endfoot
+1 & test & test@test.com & \$2y\$10\$XfwGf4B8mRysM4evglz2fe/9aCKotQYh0NLmJ1nIuXDOkpwD/.DDa & 2024-11-22 21:30:22 & 0 & 0 & \textit{NULL} \\ \hline 
+2 & bebra & b@b.b & \$2y\$10\$h4.aTFz4XM.OXTHyBWKGh.M8.iBL2eoP/sONIeU.SRVH9bKuQb992 & 2024-11-22 23:09:56 & 0 & 0 & \textit{NULL} \\ \hline 
+3 & bigboss & bb@ы.ru & \$2y\$10\$pQJPL0kt31iSNcHrRjckseZ1kZAW00fU6/NzdwmIwPM5ifb1hwgi. & 2024-11-22 23:21:21 & 1 & 0 & \textit{NULL} \\ \hline 
+4 & biggerboss & bb@google.ru & \$2y\$10\$g5.gyYxlVPzFxrsDZVfMZeJ2whzYZdisJextq6dhowSdoTPMvnyAO & 2024-11-23 00:33:01 & 1 & 0 & \textit{NULL} \\ \hline 
+5 & test2 & test2@2.2 & \$2y\$10\$BymQMFaUNzSBAM5eMZy2wugwo7ASOSR1eyxUTmcQuK.Y9Jqvzu8Ka & 2024-11-23 01:07:19 & 1 & 0 & \textit{NULL} \\ \hline 
+6 & Annal\_200Rub & mxaprostodoxrena@mail.ru & \$2y\$10\$ZUu88KY5Eg5b8gdyzv0HxepzC1mTdSBGgUmnkPgiUeMq7Zy16Qdei & 2024-11-30 10:00:42 & 1 & 0 & \textit{NULL} \\ \hline 
+7 & Foutrh & kirillsisnov@gmail.com & \$2y\$10\$EoSrMYn.b66QGyVnXg.5s.J9FbpPZ7AFNu7yKafjLrM/EbYMJ1Ptm & 2024-12-06 20:06:53 & 1 & 1 & \textit{NULL} \\ \hline 
+8 & fff & fff@fff.fff & \$2y\$10\$DN3rOCBzXvZKnc4al0.08eYvgujhRHTe9H17VgWAcwe1kcfzNgCuO & 2024-12-24 01:29:56 & 0 & 0 & \textit{NULL} \\ \hline 
+9 & ffff & ffff@fff.fff & \$2y\$10\$kA961yceo61gTyrWs3JNxe25Bp8bjPHNZVLUNuOpJIIUU6Zakttvq & 2024-12-24 01:30:26 & 1 & 0 & \textit{NULL} \\ \hline 
+10 & fffff & exame@e.e & \$2y\$10\$oFCHSAh6K1nvzsjLmSGFBepsQXdQLsAfquYyAfD/8E1JrMusdtnFm & 2024-12-24 01:30:49 & 1 & 0 & \textit{NULL} \\ \hline 
+11 & 321321 & 3213213@rewrewrwe.ru & \$2y\$10\$hhDrscQbNqhrr9fCuFXhAujUMHalRgr.QU6d1.izZ.nXUCQmY35ee & 2024-12-24 01:34:38 & 0 & 0 & \textit{NULL} \\ \hline 
+12 & 32132132132 & 3213213@rewewrewrwe.ru & \$2y\$10\$mKvdrRJX4Ku2FBI0xba/j.1AxCUkzmsFdpjd8fg8ZqhWTDbHzIpyi & 2024-12-24 01:35:01 & 1 & 0 & \textit{NULL} \\ \hline 
+13 & test3 & tt@t.tt & \$2y\$10\$mb24hOdjEoBcebFQRzCd9.p9PuT/YlGns94JnmCyUSZV.PBlYbKBC & 2024-12-24 21:24:05 & 1 & 0 & \textit{NULL} \\ \hline 
+15 & FAD & fad@mail.dom & \$2y\$10\$fFiXQPApolHiKbqhtn66Au3UsASv9A93UhPP2UNh4z/KtFQPm4v.W & 2025-01-01 17:29:24 & 1 & 1 & \textit{NULL} \\ \hline 
+ \end{longtable}
